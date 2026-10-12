@@ -9,4 +9,6 @@ import com.demoapi.demo.dtos.ProductsDTO;
 public interface ProductServices {
     public List<ProductsDTO> getAllProducts();
     public ProductResponseDTO createProduct(AddProductDTO product);
+    public ProductResponseDTO editProduct(Integer code ,ProductsDTO product);
+    public ProductResponseDTO deleteProduct(Integer code);
 }
