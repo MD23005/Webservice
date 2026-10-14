@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:text="Agregar producto"
         android:textSize="20sp"
+        android:textAlignment="center"
         android:textStyle="bold"
         android:textColor="#333333"
         android:layout_marginBottom="20dp"/>
@@ -26,7 +27,7 @@
         android:layout_marginBottom="20dp">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etNombreProducto"
+            android:id="@+id/edtProductName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapSentences"/>
@@ -49,13 +50,13 @@
             android:textColor="#333333"/>
 
         <Switch
-            android:id="@+id/swEstatus"
+            android:id="@+id/swProductStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"/>
 
         <TextView
-            android:id="@+id/tvEstadoSwitch"
+            android:id="@+id/tvProductStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Activo"
