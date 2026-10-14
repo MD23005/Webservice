@@ -23,7 +23,7 @@ public class ApiClient {
             OkHttpClient client = new OkHttpClient.Builder()
                     .addInterceptor(logging)
                     .addInterceptor(chain -> {
-                        String token = SessionManager(context).getToken;
+                        String token = new SessionManager(context).getToken();
                         Request original = chain.request();
                         Request.Builder builder = original.newBuilder()
                                 .header("Content-Type", "application/json");
@@ -43,7 +43,7 @@ public class ApiClient {
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
-        return retrofit
+        return retrofit;
     }
 
     public  static ApiService getApi(Context context){
