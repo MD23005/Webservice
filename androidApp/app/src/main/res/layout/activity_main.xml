@@ -19,6 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Inicio de sesión"
+            android:textColor="#000000"
             android:textStyle="bold"
             android:textSize="30dp"
             android:textAlignment="center"/>
@@ -36,6 +37,7 @@
                 android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000000"
                 android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -53,6 +55,7 @@
                 android:id="@+id/edtPass"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="#000000"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
         
@@ -65,6 +68,7 @@
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Iniciar sesión"
             android:background="@drawable/shape_btn"
             android:layout_marginBottom="0dp" />
@@ -102,6 +106,7 @@
             android:id="@+id/btnSignin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#000000"
             android:text="Registrarse"
             android:background="@drawable/shape_regbtn"
             android:layout_marginBottom="0dp" />
