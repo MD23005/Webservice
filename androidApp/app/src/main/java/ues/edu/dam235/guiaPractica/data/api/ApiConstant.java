@@ -8,4 +8,6 @@ public class ApiConstant {
     public static final String LOGIN = "api/v1/demoapirestdam235/auth/login";
     public static final String REGISTER = "api/v1/demoapirestdam235/auth/register";
     public static final String LOGOUT = "api/v1/demoapirestdam235/auth/logout";
+    public static final String PRODUCTS = "api/v1/demoapirestdam235/products";
+
 }

@@ -1,11 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
+
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="match_parent"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="#FFFFFF">
 
+    <!-- Titulo de la pantalla -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista de productos"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#222222"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp" />
+
+    <!-- Contenedor para mostrar productos -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_marginBottom="90dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/productsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/txtEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cargando productos..."
+                android:textColor="#666666"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:padding="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Boton cerrar sesion -->
     <ImageButton
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
@@ -14,30 +56,14 @@
         app:tint="#7D1600"
         android:layout_gravity="top|end"
         android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Cerrar sesión"
-        android:layout_margin="25dp"/>
+        android:contentDescription="Cerrar sesion"
+        android:layout_margin="25dp" />
 
-<!--    <ScrollView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="match_parent"-->
-<!--        android:fillViewport="true">-->
-
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:orientation="vertical"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:padding="32dp">-->
-<!--            -->
-
-<!--        </LinearLayout>-->
-
-<!--    </ScrollView>-->
-
+    <!-- Boton agregar producto -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/btnAdd"
         android:src="@drawable/add_icon"
         app:tint="#FFFFFF"
         android:contentDescription="Agregar producto"
